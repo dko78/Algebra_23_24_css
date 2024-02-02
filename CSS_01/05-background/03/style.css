@@ -12,5 +12,5 @@ p:nth-of-type(3) {
   background: url(../../../images/orange.png) right top/150px no-repeat,
     url(../../../images/butterfly.png) left center/contain no-repeat,
     url(../../../images/coffee-cup.png) center center/contain no-repeat,
-    #ccf url(../../../images/pattern.png);
+    rgb(255, 204, 208) url(../../../images/pattern.png);
 }
