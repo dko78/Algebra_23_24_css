@@ -1,0 +1,93 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+}
+
+div {
+  background-color: #f93;
+}
+
+.width1 {
+  width: 50%;
+}
+
+.width2 {
+  width: 500px;
+}
+
+.width3 {
+  width: 25em;
+}
+
+.height1 {
+  height: 50%;
+}
+
+.height2 {
+  height: 150px;
+}
+
+.height2 {
+  height: 5em;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.border {
+  border: 2px solid red;
+  box-sizing: border-box; /*vazno*/
+}
+
+.border-width {
+  border: 6px solid rgb(0, 255, 85);
+  box-sizing: border-box; /*vazno*/
+}
+
+.border-color {
+  border: 6px solid rgb(131, 24, 158);
+  box-sizing: border-box; /*vazno*/
+}
+
+.border-style {
+  border: 6px dotted rgb(141, 170, 35);
+  box-sizing: border-box; /*vazno*/
+}
+
+.border2 {
+  border-top: 2px solid red;
+  border-right: 2px dashed red;
+  border-bottom: 2px dotted red;
+  border-left: 2px double red;
+  box-sizing: border-box; /*vazno*/
+}
+
+.padding {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.padding2 {
+  box-sizing: border-box;
+  /*
+  padding-top: 20px;
+  padding-right: 2300px;
+  padding-bottom: 50;
+  padding-left: 5px;
+  */
+  padding: 20px 30px 50px 5px; /* u smjeru kazaljke na satu*/
+  text-align: justify;
+}
+
+.margin {
+  margin: 20px; /* tu ne treba box model, to je margina*/
+}
+
+.margin-auto {
+  margin: 0 auto; /* na sredini ekrana, auto lijevo i desno poravnatao  0 auto */
+}

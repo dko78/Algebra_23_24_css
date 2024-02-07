@@ -1,0 +1,40 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+}
+
+div {
+  background-color: rgb(196, 255, 204);
+}
+
+.div1 {
+  box-sizing: border-box;
+  border: 5px solid black;
+  padding: 20px 30px 20px 30px; /* u smjeru kazaljke na satu*/
+  margin: 20px;
+}
+
+.div2 {
+  box-sizing: border-box;
+  border: 2px dotted black;
+  padding: 20px 30px 20px 30px; /* u smjeru kazaljke na satu*/
+  margin: 20px;
+}
+
+.div3 {
+  box-sizing: border-box;
+  border-right: 5px double black;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.div4 {
+  box-sizing: border-box;
+  border-bottom: dotted black;
+  border-top: dashed red;
+  margin: 20 auto;
+}
