@@ -4,14 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CSS Box Model</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: beige;
+        border: 5px solid rgb(163, 157, 157);
+        width: 310px;
+        height: 310px;
+      }
+
+      .box1 {
+        width: 150px;
+        height: 150px;
+        font-size: 1em;
+        text-align: center;
+        color: red;
+        background-color: red;
+        margin: 0;
+      }
+
+      .box2 {
+        width: 150px;
+        height: 150px;
+        font-size: 1em;
+        text-align: center;
+        color: blue;
+        background-color: blue;
+        margin: 0px 0px 0px 150px;
+      }
+    </style>
+    <title>CSS Box Model zadatak 2</title>
   </head>
 
   <body>
-    <div class="height2">
-      <div class="height1 white"></div>
-      <div class="height1 blue"></div>
+    <div class="container">
+      <div class="box1">div1</div>
+      <div class="box2">div2</div>
     </div>
   </body>
 </html>
