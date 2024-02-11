@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position zadatak</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+      }
+
+      /* position: static|absolute|fixed|relative|sticky */
+
+      .box1 {
+        background: cadetblue;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 4;
+      }
+
+      .box2 {
+        background: orange;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        z-index: 3;
+      }
+
+      .box3 {
+        background: orchid;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        z-index: 2;
+      }
+
+      .box4 {
+        background: seagreen;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 150px;
+        top: 150px;
+        z-index: 1;
+      }
+
+      .container {
+        border: 1px solid #666;
+        background-color: rgb(207, 96, 96);
+        width: 300px;
+        height: 300px;
+        margin: 0;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
+  </body>
+</html>
