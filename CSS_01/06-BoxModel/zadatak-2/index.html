@@ -5,50 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        background-color: beige;
-        border: 5px solid rgb(163, 157, 157);
-        width: 310px;
-        height: 310px;
-        margin: auto; /*pozicionira na centar*/
-      }
-
-      .box1 {
-        width: 150px;
-        height: 150px;
-        font-size: 1em;
-        text-align: center;
-        color: red;
-        background-color: red;
+      body {
+        font-family: Tahoma, sans-serif;
+        font-size: 16px;
+        color: #333;
         margin: 0;
       }
+      body > div {
+        background-color: #eee;
+        border: 20px solid #999;
+        height: 800px;
+        margin: 2em auto;
+        width: 800px;
+      }
 
-      .box2 {
-        width: 150px;
-        height: 150px;
-        font-size: 1em;
-        text-align: center;
-        color: blue;
-        background-color: blue;
-        margin: 0px 0px 0px 150px;
+      div > div {
+        height: 50%;
+        width: 50%;
+      }
+
+      div > div:first-child {
+        background: #f66;
+      }
+      div > div:last-child {
+        background: #69f;
+        margin-left: auto;
+        margin-right: 0;
       }
     </style>
     <title>CSS Box Model zadatak 2</title>
   </head>
 
   <body>
-    <div class="container">
-      <div class="box1">div1</div>
-      <div class="box2">div2</div>
+    <div>
+      <div></div>
+      <div></div>
     </div>
   </body>
 </html>

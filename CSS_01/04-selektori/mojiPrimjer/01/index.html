@@ -34,7 +34,7 @@
         color: darkorange;      
       }
 
-      li:first-child {
+      li:first-child { ali pazi first child inside partent
         background-color: red;
       }
 
@@ -42,7 +42,6 @@
         svaki drugi element ali počinje od 1
         background-color: red;
       }
-     
      
       span:only-child {
         background: red;
@@ -58,6 +57,20 @@
       }
         span:only-of-type {
         color: red;
+      }
+
+       div:first-of-type {
+        color: aqua;
+        border: 1px solid black;
+
+        sve divove selekta ako je na početku
+         <div>
+            test div 1
+            <div>Child Div1</div>
+            <div>Child Div2</div>
+         </div>
+
+          prvi div, ali  ako ima još divova onda i te
       }
 
       li:not(.red) {elemetni li kojinemaju klasu "red"
