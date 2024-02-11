@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /*
+       div.red { div i klasa red
+        color: red;
+      }
+      span, li{color: red;} span I li
+      ul li { svi il elementi unuta ul
+        color: red;
+      }
+
+      div b {
+         bilo koji b ispod div, ne mora biti child
+        color: aquamarine;
+      }
+      div > b {
+         direct child od div-a
+        color: green;
+      }
+
+      li.red ~ li {  svaki sibling  koji ide iza klase li.red, bitno je ovo IZA
+        background: red;
+      }
+
+       li.red + li {  samo slijedeći sibling  koji ide iza klase li.red dakle jedan, ne sve kao ~
+        background: red;
+      }
+
+     li:hover { sudo selektori, kad napraviš hoover iznad li elementa,focus
+        color: darkorange;      
+      }
+
+      li:first-child {
+        background-color: red;
+      }
+
+      li:nth-child(2n - 1 ) {
+        svaki drugi element ali počinje od 1
+        background-color: red;
+      }
+     
+     
+      span:only-child {
+        background: red;
+      }
+
+     span:first-of-type {
+        color: red;
+      }
+
+      
+      li:last-of-type {
+        color: red;
+      }
+        span:only-of-type {
+        color: red;
+      }
+
+      li:not(.red) {elemetni li kojinemaju klasu "red"
+        background-color: yellow;
+      }
+
+     div.red::before { sudo element after i before
+        content: "Before";
+        color: red;
+      }
+      */
+      [data-red] {
+        background-color: red;
+      }
+    </style>
+    <title>selektori moji</title>
+  </head>
+  <body>
+    <div class="red">Ovo je div</div>
+    <div data-red>div data red</div>
+    <span>Ovo je span</span>
+    <div>
+      <span>
+        <b>nested text</b>
+      </span>
+    </div>
+    <ul>
+      <li class="red">Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+      <li>Item4</li>
+    </ul>
+  </body>
+</html>
