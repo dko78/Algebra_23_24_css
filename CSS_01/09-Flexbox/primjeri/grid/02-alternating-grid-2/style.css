@@ -9,9 +9,7 @@ body {
 }
 
 .wrapper {
-  border: 1px dashed #666;
   padding: 1em;
-  height: 600px;
 }
 
 .wrapper div {
@@ -19,14 +17,31 @@ body {
   border: 1px solid #666;
   padding: 1em;
   text-align: center;
-  width: 30%;
-  margin: 1em;
 }
 
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; /* display:flex | inline-flex */
+  display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-content: center; /* align-content: flex-start | flex-end | center | space-between | space-around | stretch */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex-basis: 32%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+
+/*
+(4 x 0) + 1 = 1 = 1. Element
+(4 x 1) + 1 = 5 = 5. Element
+(4 x 2) + 1 = 9 = 9. Element
+*/
+
+.flex-item:nth-child(4n + 1) {
+  flex-basis: 100%;
 }
