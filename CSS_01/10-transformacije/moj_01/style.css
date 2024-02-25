@@ -22,14 +22,11 @@ div {
   background-color: #f93;
   border: 1px solid #333;
   font-size: 2em;
-  line-height: 150px;
   width: 300px;
   height: 150px;
   margin: 4em auto;
   text-align: center;
 }
-
-/* transformacije */
 
 div:first-child {
   -webkit-transform: translate(-400px, 0);
@@ -37,11 +34,7 @@ div:first-child {
 }
 
 div:nth-child(2) {
-  -webkit-transform: translate(0, -278px);
-  transform: translate(
-    0,
-    -278px
-  ); /* margin-top + margin-bottom + height = 278  */
+  transform: translate(0, -275px);
 }
 
 div:nth-child(3) {

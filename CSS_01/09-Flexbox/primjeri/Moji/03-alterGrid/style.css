@@ -31,7 +31,7 @@ body {
 
 .flex-item {
   flex-grow: 0;
-  flex-basis: 32%;
+  flex-basis: 33%;
   width: 24%;
 }
 
