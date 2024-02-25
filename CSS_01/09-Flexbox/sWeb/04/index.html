@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .flexbox-container {
+        display: flex;
+        /*justify-content: center;
+        align-items: center; ovo su fglacni ta s i flex
+        */
+        border: 1px solid #333;
+        background-color: yellow;
+      }
+      .flexbox-item {
+        border: 3px solid #333;
+        background-color: #dfdfdf;
+        width: 200px;
+        margin: 10px;
+      }
+      .item-1 {
+        min-height: 100px;
+        flex-shrink: 0;
+        align-self: center;
+      }
+      .item-2 {
+        min-height: 200px;
+        flex-grow: 2;
+        flex-basis: 0; /*moras ovo postviti da bude dvostruko veći*/
+        align-self: center;
+      }
+      .item-3 {
+        min-height: 300px;
+        /*flex-grow: 1; /*to će uvijek popuniti cijeli ekran */
+        /*flex-basis: 0;*/
+        flex: 1 0 1 px;
+      }
+      .item-1::before {
+        content: "1";
+      }
+      .item-2::before {
+        content: "2";
+      }
+      .item-3::before {
+        content: "3";
+      }
+    </style>
+    <title>flex-web2 row</title>
+  </head>
+  <body>
+    <div class="flexbox-container">
+      <div class="flexbox-item item-1"></div>
+      <div class="flexbox-item item-2"></div>
+      <div class="flexbox-item item-3"></div>
+    </div>
+  </body>
+</html>

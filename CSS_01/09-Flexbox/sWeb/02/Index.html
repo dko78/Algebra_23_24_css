@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .flexbox-container {
+        display: flex;
+        /* height: 700px; */
+        /* flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;  */
+        /* align-content: flex-start;  */
+        border: 1px solid #333;
+        background-color: yellow;
+      }
+      .flexbox-item {
+        border: 3px solid #333;
+        background-color: #dfdfdf;
+        width: 200px;
+        margin: 10px;
+      }
+      .item-1 {
+        min-height: 100px;
+      }
+      .item-2 {
+        min-height: 200px;
+      }
+      .item-3 {
+        min-height: 300px;
+      }
+      .item-1::before {
+        content: "1";
+      }
+      .item-2::before {
+        content: "2";
+      }
+      .item-3::before {
+        content: "3";
+      }
+    </style>
+    <title>flex-web2 row</title>
+  </head>
+  <body>
+    <div class="flexbox-container">
+      <div class="flexbox-item item-1"></div>
+      <div class="flexbox-item item-2"></div>
+      <div class="flexbox-item item-3"></div>
+    </div>
+  </body>
+</html>
