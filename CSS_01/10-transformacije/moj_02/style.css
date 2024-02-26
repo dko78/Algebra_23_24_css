@@ -1,0 +1,42 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+}
+
+section {
+  border: 1px solid red;
+  margin: auto;
+  width: 400px;
+}
+
+div {
+  background-color: #f93;
+  border: 3px solid #333;
+  font-size: 2em;
+  width: 300px;
+  height: 150px;
+  margin: 4em auto;
+  text-align: center;
+}
+
+div:first-of-type {
+  transform: translate(400px, 0);
+}
+
+div:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+div:nth-child(3) {
+  transform: scale(0.5);
+  background-color: aqua;
+}
