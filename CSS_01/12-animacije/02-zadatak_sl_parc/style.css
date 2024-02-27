@@ -59,17 +59,13 @@ h1 {
   0% {
     top: 800;
   }
-  25% {
+  33% {
     top: 500px;
     background: #f93;
   }
-  50% {
+  66% {
     background: red;
     top: 300px;
-  }
-  75% {
-    top: 100px;
-    background: #f93;
   }
   100% {
     top: 0;
@@ -77,22 +73,22 @@ h1 {
 }
 
 .wrapper div:nth-child(1) {
-  -webkit-animation: animacija2 1s ease-in-out infinite;
+  -webkit-animation: animacija2 1s ease infinite;
   animation: animacija2 1s ease 1s;
 }
 
 .wrapper div:nth-child(2) {
-  -webkit-animation: animacija2 1s ease-in-out infinite;
+  -webkit-animation: animacija2 1s ease infinite;
   animation: animacija2 1s ease 1.5s;
 }
 
 .wrapper div:nth-child(3) {
-  -webkit-animation: animacija2 1s ease-in-out infinite;
+  -webkit-animation: animacija2 1s ease infinite;
   animation: animacija2 1s ease 2s;
 }
 
 .wrapper div:nth-child(4) {
-  -webkit-animation: animacija2 1s ease-in-out infinite;
+  -webkit-animation: animacija2 1s ease infinite;
   animation: animacija2 1s ease 2.5s;
 }
 
