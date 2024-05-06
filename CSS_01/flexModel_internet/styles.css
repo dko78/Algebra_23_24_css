@@ -1,0 +1,38 @@
+.flexbox-container {
+  display: flex;
+  /*
+  flex-direction: column;
+  */
+  justify-content: center; /* po vertikali zato što je main u biti column*/
+  align-items: center;
+  /*
+  flex-wrap: wrap;
+  justify-content: space-around; /* po main horizontalnoj osi*/
+  /*align-items: center; /* po cross y osi streched je default*/
+
+  /*align-content: flex-end;*/
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+  /*flex:1 0 0px flex grow flex shrink flex basis*/
+  min-height: 100px;
+  flex-shrink: 0;
+}
+.flexbox-item-2 {
+  min-height: 200px;
+  flex-grow: 2;
+  flex-basis: 0;
+  align-self: center;
+}
+.flexbox-item-3 {
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
