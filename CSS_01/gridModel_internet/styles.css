@@ -1,3 +1,62 @@
 .grid-container {
   display: grid;
+  /*grid-template-columns: 200px 100px;*/
+  /*grid-template-columns: 2fr 1fr; */ /* ovo ti je kao flex grow 2 i 1*/
+  /*grid-template-columns: repeat(4, 100px);*/
+  /*grid-template-rows: 200px 150px;*/
+  /* ako ne znaš koliko redova će iamti onda grid auto rows*/
+  /*grid-auto-rows: 150px;*/ /* sa sve redove koji nisu definirani je 150*/
+  /*grid-template-rows: 200px; */ /* tu si definriao da je prvi red 200, ali zbof ovog gore auto svi kojinisu definirani će biti 150*/
+  grid-template-columns: 200px 250px;
+  grid-auto-rows: minmax(150px, auto);
+  /*grid-row-gap: 20px;
+  grid-column-gap: 10px;*/
+  grid-gap: 20px;
+  /*
+  justify-content: space-around;  to je za cijeli container
+  align-content: center;
+  height: 100vh;
+  */
+
+  /* za items u containeru koristi justify-items*/
+  justify-items: stretch; /* za columns*/
+  align-items: stretch; /*za rows*/
+  /*
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar content"; /*imaš 2 kolone, ugrid template columns si definirao*/
+  /* dakle prvi rd će ti zauzeti header to radiš sa vim dolje */
+  /*kaze da mu je bolčje sa grid column start*/
+}
+
+.grid-item-1 {
+  /*grid-area: header;*/
+  /*
+  grid-column-start: 1;
+  grid-column-end: 3;
+  */
+  /**ili -1 to je kao krajnja desna točka. mozes i ovako grid-column: 1/-1/ */
+  /*grid-column: span 2; */ /*proširi se na 2 kolone*/
+
+  align-self: start;
+  justify-self: center;
+}
+
+.grid-item-2 {
+  /* grid-area: sidebar;*/
+  /*
+  grid-row-start: 2;
+  grid-row-end: 4; 
+ */
+  /*grid-row: span 2;*/
+}
+
+.grid-item-3 {
+  /* grid-area: content;*/
+  /*
+  grid-row-start: 2;
+  grid-row-end: 4; 
+ */
+  /*grid-row: span 2;*/
 }
